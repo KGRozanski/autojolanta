@@ -5879,12 +5879,16 @@ button.close {
   .nav-justified, .nav-tabs.nav-justified {
     padding: 0px 10%; } }
 @media screen and (min-width: 770px) {
+  .nav-justified > li:first-child {
+    width: 0.5%; }
   .nav-justified > li:nth-child(2) {
-    width: 0.6%; }
+    width: 0.5%; }
   .nav-justified > li:nth-child(3) {
-    width: 0.4%; }
+    width: 0.5%; }
+  .nav-justified > li:nth-child(4) {
+    width: 0.5%; }
   .nav-justified > li:last-child {
-    width: 0.4%; } }
+    width: 0.5%; } }
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
   left: auto; }
@@ -5950,3 +5954,30 @@ button.close {
     background-size: contain;
     background-position: center;
     background-image: url("assets/img/icons/breaking_shield-01.png"); }
+
+.wrapper {
+  position: relative; }
+
+.base {
+  height: 500px;
+  background-color: red;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%); }
+
+.base-border {
+  background-color: #000;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  width: 100%;
+  height: 520px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.sections .row:first-child .wrapper {
+  top: 0;
+  z-index: 1; }
+.sections .row .wrapper {
+  top: -100px;
+  z-index: -100; }
