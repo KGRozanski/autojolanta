@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Anton|Fjalla+One&subset=latin-ext");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5879,12 +5880,16 @@ button.close {
   .nav-justified, .nav-tabs.nav-justified {
     padding: 0px 10%; } }
 @media screen and (min-width: 770px) {
+  .nav-justified > li:first-child {
+    width: 0.5%; }
   .nav-justified > li:nth-child(2) {
-    width: 0.6%; }
+    width: 0.5%; }
   .nav-justified > li:nth-child(3) {
-    width: 0.4%; }
+    width: 0.5%; }
+  .nav-justified > li:nth-child(4) {
+    width: 0.5%; }
   .nav-justified > li:last-child {
-    width: 0.4%; } }
+    width: 0.5%; } }
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
   left: auto; }
@@ -5935,9 +5940,74 @@ button.close {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
+body {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #3f3f3f; }
+
+h1 {
+  font-size: 54px;
+  font-family: 'Anton', sans-serif; }
+
+.base {
+  height: 500px;
+  background-color: #3f3f3f;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  padding-top: 100px; }
+
+.base-border {
+  background-color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
+  width: 100%;
+  height: 520px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.wrapper {
+  position: relative;
+  margin-top: -100px; }
+
+.sections .row:first-child .wrapper {
+  margin-top: 0;
+  z-index: 1000; }
+.sections .row:first-child .base {
+  padding-top: 65px;
+  background-color: #C15339; }
+.sections .row:nth-child(2) .wrapper {
+  z-index: 900; }
+.sections .row:nth-child(2) .base {
+  background-color: #E2A764; }
+.sections .row:nth-child(3) .wrapper {
+  z-index: 800; }
+.sections .row:nth-child(3) .base {
+  background-color: #4AA26E; }
+.sections .row:nth-child(4) .wrapper {
+  z-index: 700; }
+.sections .row:nth-child(4) .base {
+  background-color: #44788E; }
+.sections .row:nth-child(5) .wrapper {
+  z-index: 600; }
+.sections .row:nth-child(5) .base {
+  background-color: #515B9B;
+  height: 800px; }
+.sections .row:nth-child(5) .base-border {
+  height: 820px; }
+
+.logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 500px; }
+
 .navbar {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75); }
+          box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  font-family: 'Anton', sans-serif; }
 
 #myNavbar {
   font-size: 27px; }
