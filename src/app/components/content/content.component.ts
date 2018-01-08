@@ -1,14 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent implements OnInit {
+export class ContentComponent {
 
-  constructor() { }
+  constructor() {
 
-  ngOnInit() {}
+  }
+
+  onSubmit() {
+    console.log('dziala!');
+    window.open('http://maps.google.com/maps?saddr=&daddr=autojolanta', '_blank');
+  }
 
 }
