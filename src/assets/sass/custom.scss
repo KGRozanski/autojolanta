@@ -13,7 +13,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 body{
     color: #fff;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #3f3f3f;
+    background-color: #2e2e2e;
 }
 h1{
     font-size: 54px;
@@ -127,4 +127,29 @@ h1{
         background-position: center;
         background-image: url("assets/img/icons/breaking_shield-01.png");
     }
+}
+// MAP
+
+.map{
+    position: relative;
+    top: -200px;
+    padding: 0;
+}
+
+//CLIPPING-PATHS Xd
+.clipping-path{
+    position: absolute;
+    height: 800px;
+    top: 119px;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(0 100%, 100% 100%, 100% 70%, 50% 85%, 0 70%);
+    background-color: #2e2e2e;
+}
+.shadow{
+    background-color: red;
+    margin: 0 auto;
+    width: 100%;
+    height: 15%;
+    transform: rotate(45deg)
 }
