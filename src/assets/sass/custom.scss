@@ -28,7 +28,8 @@ p{
     background-color: #3f3f3f;
     -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     position: relative;
     top: -20px;
 } 
@@ -41,7 +42,7 @@ p{
 
 .wrapper{
     position: relative;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 
 .sections{
@@ -51,9 +52,9 @@ p{
             z-index: 1000;
         }
         .base{
-            height: 550px;
             padding-top: 80px;
             background-color: #C15339;
+            padding-bottom: 25px;
         }
     }
     .row:nth-child(2){
@@ -69,8 +70,7 @@ p{
             z-index: 800;
         }
         .base{
-            background-color: #4AA26E;  
-             
+            background-color: #4AA26E;
         }
     }
     .row:nth-child(4){
@@ -87,7 +87,7 @@ p{
         }
         .base{
             background-color: #515B9B;
-            height: 800px;
+            height: 1100px;
         }
         .base-border{
             height: 820px;
@@ -99,12 +99,6 @@ p{
 
 // LOGO
 
-.logo{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 500px;
-}
 
 // NAVBAR
 .navbar{
@@ -131,19 +125,19 @@ p{
 .clipping-path{
     position: absolute;
     height: 773px;
-    top: 119px;
+    top: 319px;
     left: 0;
     width: 100%;
     clip-path: polygon(0 100%, 100% 100%, 100% 70%, 50% 85%, 0 70%);
     background-color: #fff;
 }
 .border{
-    top: 139px;
+    top: 339px;
     background-color: #2e2e2e;
 }
 .clipping-path-ractangle{
     position: absolute;
-    top: 25px;
+    top: 24px;
     width: 100%;
     height: 200px;
     z-index: 1000;

@@ -5959,7 +5959,8 @@ p {
   background-color: #3f3f3f;
   -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
   clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-  padding-top: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   position: relative;
   top: -20px; }
 
@@ -5971,15 +5972,15 @@ p {
 
 .wrapper {
   position: relative;
-  margin-top: -100px; }
+  margin-top: -200px; }
 
 .sections .row:first-child .wrapper {
   margin-top: 0;
   z-index: 1000; }
 .sections .row:first-child .base {
-  height: 550px;
   padding-top: 80px;
-  background-color: #C15339; }
+  background-color: #C15339;
+  padding-bottom: 25px; }
 .sections .row:nth-child(2) .wrapper {
   z-index: 900; }
 .sections .row:nth-child(2) .base {
@@ -5996,16 +5997,9 @@ p {
   z-index: 600; }
 .sections .row:nth-child(5) .base {
   background-color: #515B9B;
-  height: 800px; }
+  height: 1100px; }
 .sections .row:nth-child(5) .base-border {
   height: 820px; }
-
-.logo {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  max-width: 500px; }
 
 .navbar {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -6027,7 +6021,7 @@ p {
 .clipping-path {
   position: absolute;
   height: 773px;
-  top: 119px;
+  top: 319px;
   left: 0;
   width: 100%;
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 70%, 50% 85%, 0 70%);
@@ -6035,12 +6029,12 @@ p {
   background-color: #fff; }
 
 .border {
-  top: 139px;
+  top: 339px;
   background-color: #2e2e2e; }
 
 .clipping-path-ractangle {
   position: absolute;
-  top: 25px;
+  top: 24px;
   width: 100%;
   height: 200px;
   z-index: 1000;
