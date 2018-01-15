@@ -5966,8 +5966,8 @@ p {
   height: 60vw;
   -webkit-transform: rotate(165deg) skewX(60deg) scaleY(0.5);
           transform: rotate(165deg) skewX(60deg) scaleY(0.5);
-  -webkit-box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 20px -20px 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 20px -20px 20px 0px rgba(0, 0, 0, 0.35); }
 
 .squere-holder {
   position: absolute;
@@ -5982,6 +5982,16 @@ p {
   width: 100%;
   bottom: 0;
   left: 0; }
+
+.logo-wrapper {
+  position: relative;
+  top: 7.5vh; }
+
+.top-margin {
+  padding-top: 300px; }
+
+table {
+  font-size: 34px; }
 
 .sections .row:first-child {
   z-index: 1000;
@@ -6029,3 +6039,11 @@ p {
     background-size: contain;
     background-position: center;
     background-image: url("assets/img/icons/breaking_shield-01.png"); }
+
+.map {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  width: 50%;
+  height: 500px;
+  z-index: -100; }

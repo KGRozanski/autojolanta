@@ -106,7 +106,7 @@ p{
     width: 60vw;
     height: 60vw;
     transform: rotate(165deg) skewX(60deg) scaleY( cos(60deg) );
-    box-shadow: 10px -10px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px -20px 20px 0px rgba(0,0,0,0.35);
 }
 
 .squere-holder{
@@ -125,7 +125,17 @@ p{
     bottom: 0;
     left: 0;
 }
+.logo-wrapper{
+    position: relative;
+    top: 7.5vh;
+}
 
+.top-margin{
+    padding-top: 300px;
+}
+table{
+    font-size: 34px;
+}
 //SECTIONS
 
 .sections{
@@ -238,3 +248,13 @@ p{
 //     background-color: #515B9B;
 //     clip-path: polygon(50% 45%, 0 0, 100% 0);
 // }
+
+.map{
+    position: absolute;
+    top: 500px;
+    right: 0;
+    width: 50%;
+    height: 500px;
+    z-index: -100;
+
+}
