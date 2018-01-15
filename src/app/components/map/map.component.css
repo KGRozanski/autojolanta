@@ -3,6 +3,7 @@ agm-map {
     height: 1000px;
     position: relative;
     top: -100px;
+    display: none;
   }
 
   @media screen and (max-width: 991px){
