@@ -5955,6 +5955,10 @@ h1 {
 p {
   font-size: 34px; }
 
+.row {
+  position: relative;
+  padding-top: 200px; }
+
 .squere {
   margin: 0 auto;
   border: 20px solid #fff;
@@ -5963,8 +5967,8 @@ p {
   height: 60vw;
   -webkit-transform: rotate(165deg) skewX(60deg) scaleY(0.5);
           transform: rotate(165deg) skewX(60deg) scaleY(0.5);
-  -webkit-box-shadow: 10px -10px 5px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 10px -10px 5px 0px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.75); }
 
 .squere-holder {
   position: absolute;
