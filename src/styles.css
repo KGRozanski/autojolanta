@@ -5956,8 +5956,7 @@ p {
   font-size: 34px; }
 
 .row {
-  position: relative;
-  padding-top: 200px; }
+  position: relative; }
 
 .squere {
   margin: 0 auto;
@@ -5983,6 +5982,36 @@ p {
   width: 100%;
   bottom: 0;
   left: 0; }
+
+.sections .row:first-child {
+  z-index: 1000;
+  background-color: #C15339; }
+  .sections .row:first-child .wrapper .squere-holder .squere {
+    background-color: #C15339; }
+.sections .row:nth-child(2) {
+  z-index: 900; }
+  .sections .row:nth-child(2) .row {
+    background-color: #E2A764; }
+  .sections .row:nth-child(2) .wrapper .squere-holder .squere {
+    background-color: #E2A764; }
+.sections .row:nth-child(3) {
+  z-index: 800; }
+  .sections .row:nth-child(3) .row {
+    background-color: #4AA26E; }
+  .sections .row:nth-child(3) .wrapper .squere-holder .squere {
+    background-color: #4AA26E; }
+.sections .row:nth-child(4) {
+  z-index: 700; }
+  .sections .row:nth-child(4) .row {
+    background-color: #44788E; }
+  .sections .row:nth-child(4) .wrapper .squere-holder .squere {
+    background-color: #44788E; }
+.sections .row:nth-child(5) {
+  z-index: 600; }
+  .sections .row:nth-child(5) .row {
+    background-color: #515B9B; }
+  .sections .row:nth-child(5) .wrapper .squere-holder .squere {
+    background-color: #515B9B; }
 
 .navbar {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);

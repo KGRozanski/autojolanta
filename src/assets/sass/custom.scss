@@ -74,6 +74,12 @@ $_precision: 10;
 }
 
 //VARIABLES
+$logoColor:  #C15339;
+$aboutColor: #E2A764;
+$servicesColor: #4AA26E;
+$partsColor: #44788E;
+$contactColor: #515B9B;
+
 
 
 //MAIN PRINCIPLES
@@ -92,7 +98,6 @@ p{
 }
 .row{
     position: relative;
-    padding-top: 200px;
 }
 .squere{
     margin: 0 auto;
@@ -121,10 +126,73 @@ p{
     left: 0;
 }
 
+//SECTIONS
 
-
-// LOGO
-
+.sections{
+    .row:first-child{
+        z-index: 1000;
+        background-color: $logoColor;
+        .wrapper{
+            .squere-holder{
+                .squere{
+                    background-color: $logoColor;
+                }
+            }
+        }
+    }
+    .row:nth-child(2){
+        z-index: 900;
+        .row{
+            background-color: $aboutColor;
+        }
+        .wrapper{
+            .squere-holder{
+                .squere{
+                    background-color: $aboutColor;
+                }
+            }
+        }
+    }
+    .row:nth-child(3){
+        z-index: 800;
+        .row{
+            background-color: $servicesColor;
+        }
+        .wrapper{
+            .squere-holder{
+                .squere{
+                    background-color: $servicesColor;
+                }
+            }
+        }
+    }
+    .row:nth-child(4){
+        z-index: 700;
+        .row{
+            background-color: $partsColor;   
+        }
+        .wrapper{
+            .squere-holder{
+                .squere{
+                    background-color: $partsColor;
+                }
+            }
+        }
+    }
+    .row:nth-child(5){
+        z-index: 600;
+        .row{
+            background-color: $contactColor;
+        }
+        .wrapper{
+            .squere-holder{
+                .squere{
+                    background-color: $contactColor;
+                }
+            }
+        }
+    }
+}
 
 // NAVBAR
 .navbar{
