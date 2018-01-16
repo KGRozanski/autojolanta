@@ -5,15 +5,93 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import 'mixins';
 @import 'navs';
 @import 'responsive';
+//GEOMETRY MATHS SECTION
+///////////////////////////////////////////////////////////
+// Plain SASS Trigonometry Algorithm in Taylor Expansion //
+//                                                       //
+// Based on                                              //
+//      http://japborst.net/posts/sass-sines-and-cosines //
+///////////////////////////////////////////////////////////
+
+$pi: 3.14159265359;
+$_precision: 10;
+
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
+    }
+  }
+  @if $exp < 1{
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0{
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle){
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1) ) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+
+@function cos($angle){
+  $a: _to_unitless_rad($angle);
+  $cos: 1;
+  @for $n from 1 through $_precision {
+    $cos: $cos + ( pow(-1,$n) / fact(2*$n) ) * pow($a,2*$n);
+  }
+  @return $cos;
+}
+
+@function tan($angle){
+  @return sin($angle) / cos($angle);
+}
+
 //VARIABLES
+$logoColor:  #C15339;
+$aboutColor: #E2A764;
+$servicesColor: #4AA26E;
+$partsColor: #44788E;
+$contactColor: #515B9B;
+$footerColor: rgb(255, 255, 255);
+$footerColorW: rgb(0, 0, 0);
+
 
 
 //MAIN PRINCIPLES
-
 body{
     color: #fff;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #2e2e2e;
+    background-color: #000;;
+    overflow-x: hidden;
+    text-shadow: 3px 3px 2px #636363;
+    
 }
 h1{
     font-size: 54px;
@@ -23,82 +101,96 @@ h1{
 p{
     font-size: 34px;
 }
-
-.base{
-    background-color: #3f3f3f;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-    padding-top: 200px;
-    padding-bottom: 200px;
+.row{
     position: relative;
-    top: -20px;
-} 
-.base-border{
-    background-color: #fff;
-    -webkit-clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 1%, 100% 85%, 50% 100%, 0 85%);
-    width: 100%; 
+}
+.squere{
+    position: absolute;
+    top: -30vw;
+    left: 19.7%;
+    border: 40px solid rgb(255, 255, 255);
+    background-color: rgb(0, 38, 255);
+    width: 60vw;
+    height: 60vw;
+    transform: rotate(165deg) skewX(60deg) scaleY( cos(60deg) );
+    box-shadow: 20px -20px 20px 0px rgba(0,0,0,0.35);
 }
 
 .wrapper{
-    position: relative;
-    margin-top: -200px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
+.logo-wrapper{
+    position: relative;
+    top: 7.5vh;
+}
+
+.top-margin{
+    padding-top: 300px;
+}
+table{
+    font-size: 34px;
+}
+//SECTIONS
 
 .sections{
     .row:first-child{
+        z-index: 1000;
+        background-color: $logoColor;
         .wrapper{
-            margin-top: 0;
-            z-index: 1000;
-        }
-        .base{
-            padding-top: 80px;
-            background-color: #C15339;
-            padding-bottom: 25px;
+            .squere{
+                background-color: $logoColor;
+            }
+            
         }
     }
     .row:nth-child(2){
-        .wrapper{
-            z-index: 900;
+        z-index: 900;
+        .row{
+            background-color: $aboutColor;
         }
-        .base{
-            background-color: #E2A764;
+        .wrapper{
+            .squere{
+                background-color: $aboutColor;
+            }
         }
     }
     .row:nth-child(3){
-        .wrapper{
-            z-index: 800;
+        z-index: 800;
+        .row{
+            background-color: $servicesColor;
         }
-        .base{
-            background-color: #4AA26E;
+        .wrapper{
+            .squere{
+                background-color: $servicesColor;
+            }
         }
     }
     .row:nth-child(4){
-        .wrapper{
-            z-index: 700;
+        z-index: 700;
+        .row{
+            background-color: $partsColor;   
         }
-        .base{
-            background-color: #44788E;
+        .wrapper{
+            .squere{
+                background-color: $partsColor;
+            }
         }
     }
     .row:nth-child(5){
+        z-index: 600;
+        .row{
+            background-color: $contactColor;
+        }
         .wrapper{
-            z-index: 600;
-        }
-        .base{
-            background-color: #515B9B;
-            height: 1100px;
-        }
-        .base-border{
-            height: 820px;
+            .squere{
+                background-color: $contactColor;
+            }
         }
     }
 }
-
-
-
-// LOGO
-
 
 // NAVBAR
 .navbar{
@@ -121,26 +213,78 @@ p{
         background-image: url("assets/img/icons/breaking_shield-01.png");
     }
 }
-//CLIPPING-PATHS Xd
-.clipping-path{
+
+.map{
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 800px;
+}
+
+.footer{
+    position: relative;
+
+}
+
+  .black{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 500px;
+        background-color: $footerColor;
+        margin-top: 14.5%;
+  }
+  .black::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $footerColor;
+        transform: skew(0deg, 15deg);
+  }
+  .black::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: $footerColor;
+        transform: skew(0deg, -15deg);
+  }
+  .whiteBorder{
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        height: 500px;
+        background-color: $footerColorW;
+        margin-top: 14.5%
+}
+.whiteBorder::before{
+    content: '';
     position: absolute;
-    height: 773px;
-    top: 319px;
+    top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
-    clip-path: polygon(0 100%, 100% 100%, 100% 70%, 50% 85%, 0 70%);
-    background-color: #fff;
+    background: $footerColorW;
+    transform: skew(0deg, 15deg);
+    
+    
 }
-.border{
-    top: 339px;
-    background-color: #2e2e2e;
-}
-.clipping-path-ractangle{
+.whiteBorder::after{
+    content: '';
     position: absolute;
-    top: 24px;
+    top: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    height: 200px;
-    z-index: 1000;
-    background-color: #515B9B;
-    clip-path: polygon(50% 45%, 0 0, 100% 0);
+    background: $footerColorW;
+    transform: skew(0deg, -15deg);
+    
+    box-shadow:         inset 0 0 30px #000000;
 }
