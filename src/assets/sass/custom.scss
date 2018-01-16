@@ -4,7 +4,6 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import 'variables';
 @import 'mixins';
 @import 'navs';
-@import 'responsive';
 //GEOMETRY MATHS SECTION
 ///////////////////////////////////////////////////////////
 // Plain SASS Trigonometry Algorithm in Taylor Expansion //
@@ -220,6 +219,37 @@ table{
     width: 100%;
     height: 800px;
 }
+.map-triangle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-color: $contactColor;
+    z-index: 100;
+}
+.map-triangle::before{
+    height: 138px;
+    content: '';
+    width: 50%;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: 0;
+    background: $contactColor;
+    transform: skewY(15deg);
+}
+.map-triangle::after{
+    height: 138px;
+    content: '';
+    width: 50%;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    right: 0;
+    background: $contactColor;
+    transform: skewY(-15deg);
+}
 
 .footer{
     position: relative;
@@ -228,7 +258,7 @@ table{
 
   .black{
         position: absolute;
-        top: 0;
+        top: -8px;
         left: 0;
         z-index: 1000;
         width: 100%;
@@ -239,7 +269,7 @@ table{
   .black::before{
         content: '';
         position: absolute;
-        top: 0;
+        top: -8px;
         left: 0;
         height: 100%;
         width: 100%;
@@ -249,7 +279,7 @@ table{
   .black::after{
         content: '';
         position: absolute;
-        top: 0;
+        top: -8px;
         right: 0;
         height: 100%;
         width: 100%;
@@ -285,6 +315,8 @@ table{
     width: 100%;
     background: $footerColorW;
     transform: skew(0deg, -15deg);
-    
-    box-shadow:         inset 0 0 30px #000000;
 }
+
+
+//This needs to be on bottom
+@import 'responsive';

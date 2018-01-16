@@ -3,3 +3,11 @@
         display: none;
     }
 }
+@media screen and (max-width: 991px) {
+    .map{
+        top: 300px;
+    }
+    .top-margin{
+        padding-top: 100px;
+    }
+}

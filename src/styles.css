@@ -5940,9 +5940,6 @@ button.close {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-@media screen and (min-width: 991px) {
-  .clipping-path-ractangle {
-    display: none; } }
 body {
   color: #fff;
   font-family: 'Fjalla One', sans-serif;
@@ -6042,12 +6039,45 @@ table {
   width: 100%;
   height: 800px; }
 
+.map-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #515B9B;
+  z-index: 100; }
+
+.map-triangle::before {
+  height: 138px;
+  content: '';
+  width: 50%;
+  position: absolute;
+  z-index: 1000;
+  top: -10px;
+  left: 0;
+  background: #515B9B;
+  -webkit-transform: skewY(15deg);
+          transform: skewY(15deg); }
+
+.map-triangle::after {
+  height: 138px;
+  content: '';
+  width: 50%;
+  position: absolute;
+  z-index: 1000;
+  top: -10px;
+  right: 0;
+  background: #515B9B;
+  -webkit-transform: skewY(-15deg);
+          transform: skewY(-15deg); }
+
 .footer {
   position: relative; }
 
 .black {
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
   z-index: 1000;
   width: 100%;
@@ -6058,7 +6088,7 @@ table {
 .black::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -8px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -6069,7 +6099,7 @@ table {
 .black::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -8px;
   right: 0;
   height: 100%;
   width: 100%;
@@ -6105,6 +6135,14 @@ table {
   width: 100%;
   background: black;
   -webkit-transform: skew(0deg, -15deg);
-          transform: skew(0deg, -15deg);
-  -webkit-box-shadow: inset 0 0 30px #000000;
-          box-shadow: inset 0 0 30px #000000; }
+          transform: skew(0deg, -15deg); }
+
+@media screen and (min-width: 991px) {
+  .clipping-path-ractangle {
+    display: none; } }
+@media screen and (max-width: 991px) {
+  .map {
+    top: 300px; }
+
+  .top-margin {
+    padding-top: 100px; } }
