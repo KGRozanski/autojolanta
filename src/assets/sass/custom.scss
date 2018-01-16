@@ -79,6 +79,8 @@ $aboutColor: #E2A764;
 $servicesColor: #4AA26E;
 $partsColor: #44788E;
 $contactColor: #515B9B;
+$footerColor: rgb(255, 255, 255);
+$footerColorW: rgb(0, 0, 0);
 
 
 
@@ -86,8 +88,10 @@ $contactColor: #515B9B;
 body{
     color: #fff;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #286949;
+    background-color: #000;;
     overflow-x: hidden;
+    text-shadow: 3px 3px 2px #636363;
+    
 }
 h1{
     font-size: 54px;
@@ -104,23 +108,13 @@ p{
     position: absolute;
     top: -30vw;
     left: 19.7%;
-    border: 20px solid #fff;
+    border: 40px solid rgb(255, 255, 255);
     background-color: rgb(0, 38, 255);
     width: 60vw;
     height: 60vw;
     transform: rotate(165deg) skewX(60deg) scaleY( cos(60deg) );
     box-shadow: 20px -20px 20px 0px rgba(0,0,0,0.35);
 }
-
-// .squere-holder{
-//     position: absolute;
-//     bottom: -30vw;
-//     left: 0;
-//     width: 100%;
-//     z-index: -10000;
-//     overflow: hidden;
-
-// }
 
 .wrapper{
     position: absolute;
@@ -221,9 +215,76 @@ table{
 }
 
 .map{
-    width: 50%;
-    height: 500px;
-    z-index: -100;
-    overflow: hidden;
-    // clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 800px;
+}
+
+.footer{
+    position: relative;
+
+}
+
+  .black{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 500px;
+        background-color: $footerColor;
+        margin-top: 14.5%;
+  }
+  .black::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: $footerColor;
+        transform: skew(0deg, 15deg);
+  }
+  .black::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: $footerColor;
+        transform: skew(0deg, -15deg);
+  }
+  .whiteBorder{
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        height: 500px;
+        background-color: $footerColorW;
+        margin-top: 14.5%
+}
+.whiteBorder::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $footerColorW;
+    transform: skew(0deg, 15deg);
+    
+    
+}
+.whiteBorder::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $footerColorW;
+    transform: skew(0deg, -15deg);
+    
+    box-shadow:         inset 0 0 30px #000000;
 }

@@ -5946,8 +5946,9 @@ button.close {
 body {
   color: #fff;
   font-family: 'Fjalla One', sans-serif;
-  background-color: #286949;
-  overflow-x: hidden; }
+  background-color: #000;
+  overflow-x: hidden;
+  text-shadow: 3px 3px 2px #636363; }
 
 h1 {
   font-size: 54px;
@@ -5963,7 +5964,7 @@ p {
   position: absolute;
   top: -30vw;
   left: 19.7%;
-  border: 20px solid #fff;
+  border: 40px solid white;
   background-color: #0026ff;
   width: 60vw;
   height: 60vw;
@@ -6036,7 +6037,74 @@ table {
     background-image: url("assets/img/icons/breaking_shield-01.png"); }
 
 .map {
-  width: 50%;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  height: 800px; }
+
+.footer {
+  position: relative; }
+
+.black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
   height: 500px;
-  z-index: -100;
-  overflow: hidden; }
+  background-color: white;
+  margin-top: 14.5%; }
+
+.black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  -webkit-transform: skew(0deg, 15deg);
+          transform: skew(0deg, 15deg); }
+
+.black::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  -webkit-transform: skew(0deg, -15deg);
+          transform: skew(0deg, -15deg); }
+
+.whiteBorder {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  margin-top: 14.5%; }
+
+.whiteBorder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  -webkit-transform: skew(0deg, 15deg);
+          transform: skew(0deg, 15deg); }
+
+.whiteBorder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  -webkit-transform: skew(0deg, -15deg);
+          transform: skew(0deg, -15deg);
+  -webkit-box-shadow: inset 0 0 30px #000000;
+          box-shadow: inset 0 0 30px #000000; }
