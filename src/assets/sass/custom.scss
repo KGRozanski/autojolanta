@@ -1,5 +1,5 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
-@import url('https://fonts.googleapis.com/css?family=Anton|Fjalla+One&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Anton|Teko&subset=latin-ext');
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 @import 'variables';
 @import 'mixins';
@@ -86,27 +86,35 @@ $footerColorW: rgb(0, 0, 0);
 //MAIN PRINCIPLES
 body{
     color: #fff;
-    font-family: 'Fjalla One', sans-serif;
-    background-color: #000;;
-    overflow-x: hidden;
+    font-family: 'Teko', sans-serif;
+    background-color: #000;
     text-shadow: 3px 3px 2px #636363;
-    
 }
 h1{
     font-size: 54px;
     font-family: 'Anton', sans-serif;
 }
+h2{
+    font-size: 44px;
+}
 
 p{
     font-size: 34px;
 }
+.note{
+    font-size: 24px;
+}
 .row{
     position: relative;
+}
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .squere{
     position: absolute;
     top: -30vw;
-    left: 19.7%;
+    left: 20.2%;
     border: 40px solid rgb(255, 255, 255);
     background-color: rgb(0, 38, 255);
     width: 60vw;
@@ -123,7 +131,7 @@ p{
 }
 .logo-wrapper{
     position: relative;
-    top: 7.5vh;
+    top: 6vw;
 }
 
 .top-margin{
@@ -135,6 +143,9 @@ table{
 //SECTIONS
 
 .sections{
+    overflow: hidden;
+    padding: 0;
+    margin-top: 50px;
     .row:first-child{
         z-index: 1000;
         background-color: $logoColor;
@@ -213,6 +224,8 @@ table{
     }
 }
 
+//MAP
+
 .map{
     position: relative;
     top: -100px;
@@ -253,46 +266,66 @@ table{
 
 .footer{
     position: relative;
-
+    width: 100%;
+    height: 500px;
+}
+.footer-logo{
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+}
+.logo-small{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.copyright-info{
+    font-size: 16px;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
 }
 
-  .black{
-        position: absolute;
-        top: -8px;
-        left: 0;
-        z-index: 1000;
-        width: 100%;
-        height: 500px;
-        background-color: $footerColor;
-        margin-top: 14.5%;
-  }
-  .black::before{
-        content: '';
-        position: absolute;
-        top: -8px;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: $footerColor;
-        transform: skew(0deg, 15deg);
-  }
-  .black::after{
-        content: '';
-        position: absolute;
-        top: -8px;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        background: $footerColor;
-        transform: skew(0deg, -15deg);
-  }
-  .whiteBorder{
-        position: relative;
-        z-index: 1000;
-        width: 100%;
-        height: 500px;
-        background-color: $footerColorW;
-        margin-top: 14.5%
+.black{
+    position: absolute;
+    top: -8px;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 500px;
+    background-color: $footerColor;
+    margin-top: 14.5%;
+}
+.black::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $footerColor;
+    transform: skew(0deg, 15deg);
+}
+.black::after{
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: $footerColor;
+    transform: skew(0deg, -15deg);
+}
+.whiteBorder{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 500px;
+    background-color: $footerColorW;
+    margin-top: 14.5%
 }
 .whiteBorder::before{
     content: '';
@@ -315,6 +348,44 @@ table{
     width: 100%;
     background: $footerColorW;
     transform: skew(0deg, -15deg);
+}
+
+//CONTACT
+.fa-map-marker{
+    line-height: 88px;
+    display: inline-block;
+    position: absolute;
+    bottom: 90px;
+}
+//BUTTONS
+
+.btn-jolanta{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    background-color: $servicesColor;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid #fff;
+    outline: none !important;
+}
+.btn-jolanta:hover{
+    background-color: rgb(48, 202, 107);
+    box-shadow: inset 0 0 10px #0000007e;
+}
+.navigation{
+    position: absolute;
+    width: 100%;
+    bottom: 27%;
+    z-index: 1000;
+}
+
+////// btn assets ///
+.arrow{
+    position: absolute;
+    left: 26%;
+    top: 10%;
 }
 
 
