@@ -3,3 +3,57 @@
         display: none;
     }
 }
+@media screen and (max-width: 991px) {
+    .map{
+        top: 200px;
+    }
+    .squere{
+        width: 70vw;
+        height: 70vw;
+        top: -34vw;
+        left: 15.1%;
+    }
+    table{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .note{
+        font-size: 16px;
+    }
+    .table{
+        margin-bottom: 0;
+    }
+    .navigation{
+        bottom: 38%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-margin{
+        padding-top: 150px;
+    }
+    .footer-logo{
+        top: 50%;
+        transform: translateY(-10%);
+    }
+}
+
+
+// EXTRA SMALL
+
+@media screen and (max-width: 768px) {
+    .top-margin{
+        padding-top: 30%;
+    }
+    .squere{
+        width: 85vw;
+        height: 85vw;
+        top: -40vw;
+        left: 8.4%;
+    }
+    h1{
+        text-align: center;
+    }
+}
