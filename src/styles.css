@@ -5960,7 +5960,8 @@ p {
   font-size: 24px; }
 
 .row {
-  position: relative; }
+  position: relative;
+  margin-top: -300px; }
 
 .container-fluid {
   padding-left: 30px;
@@ -5980,10 +5981,11 @@ p {
           box-shadow: 20px -20px 20px 0px rgba(0, 0, 0, 0.35); }
 
 .wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  height: 300px; }
 
 .logo-wrapper {
   position: relative;
@@ -5996,12 +5998,14 @@ table {
   font-size: 34px; }
 
 .sections {
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   margin-top: 50px; }
   .sections .row:first-child {
-    z-index: 1000;
-    background-color: #C15339; }
+    margin-top: 0;
+    z-index: 1000; }
+    .sections .row:first-child .container-fluid .row {
+      background-color: #C15339; }
     .sections .row:first-child .wrapper .squere {
       background-color: #C15339; }
   .sections .row:nth-child(2) {
@@ -6088,7 +6092,8 @@ table {
 .footer {
   position: relative;
   width: 100%;
-  height: 500px; }
+  height: 500px;
+  top: -300px; }
 
 .footer-logo {
   position: absolute;
@@ -6172,7 +6177,7 @@ table {
   -webkit-transform: skew(0deg, -15deg);
           transform: skew(0deg, -15deg); }
 
-.fa-map-marker {
+.mapMakerContact {
   line-height: 88px;
   display: inline-block;
   position: absolute;
