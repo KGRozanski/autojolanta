@@ -278,7 +278,7 @@ table{
 }
 .footer-logo{
     position: absolute;
-    z-index: 10000;
+    z-index: 1001;
     bottom: 0;
     height: 200px;
     width: 100%;
@@ -357,13 +357,7 @@ table{
     transform: skew(0deg, -15deg);
 }
 
-//CONTACT
-.mapMakerContact{
-    line-height: 88px;
-    display: inline-block;
-    position: absolute;
-    bottom: 90px;
-}
+
 //BUTTONS
 
 .btn-jolanta{
