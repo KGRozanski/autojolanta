@@ -5,9 +5,12 @@ import { AppComponent } from './app.component';
 import { ContentComponent } from './components/content/content.component';
 import { MapComponent } from './components/map/map.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AgmCoreModule } from '@agm/core';
 
 import { FormsModule } from '@angular/forms';
+import { AllegroComponent } from './components/allegro/allegro.component';
 
 
 
@@ -16,14 +19,16 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ContentComponent,
-    MapComponent
+    MapComponent,
+    AllegroComponent
   ],
   imports: [
     BrowserModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDCHUX5vXuJYzdHlwiVvYpUqc24uoE5B1o'
     }),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
   ],
