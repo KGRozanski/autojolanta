@@ -14,7 +14,6 @@ export class ContentComponent {
   }
 
   onSubmit() {
-    console.log('dziala!');
     window.open('http://maps.google.com/maps?saddr=&daddr=autojolanta', '_blank');
   }
 

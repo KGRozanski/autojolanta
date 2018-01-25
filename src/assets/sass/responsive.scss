@@ -31,9 +31,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .top-margin{
-        padding-top: 150px;
-    }
+    
+    
     .footer-logo{
         top: 50%;
         transform: translateY(-10%);
@@ -44,6 +43,9 @@
 // EXTRA SMALL
 
 @media screen and (max-width: 768px) {
+    .footer{
+        top: 22vw;
+    }
     .top-margin{
         padding-top: 30%;
     }

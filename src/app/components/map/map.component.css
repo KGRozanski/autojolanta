@@ -8,6 +8,6 @@ agm-map {
   @media screen and (max-width: 991px){
     agm-map {
       position: relative;
-      height: 750px;
+      height: 800px;
     }
 }
