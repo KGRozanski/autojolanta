@@ -1,19 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+declare var $: any;
 @Component({
   selector: 'app-allegro',
   templateUrl: './allegro.component.html',
   styleUrls: ['./allegro.component.css']
 })
-export class AllegroComponent implements OnInit {
+
+export class AllegroComponent {
 
   constructor(private http: HttpClient) {}
-
-  ngOnInit(): void {
-    this.http.get('http://webapi.allegro.pl/').subscribe(data => {
-      console.log(data);
-    });
-  }
-
 }
