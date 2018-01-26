@@ -319,6 +319,11 @@ app-content{
     background-size: cover;
     z-index: 10000;
 }
+.highlight{
+    background-image: url("assets/img/highlight.png");
+    opacity: 0.5;
+    z-index: 10001;
+}
 .copyright-info{
     font-size: 16px;
     position: absolute;

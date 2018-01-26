@@ -28,6 +28,9 @@
     .navigation{
         bottom: 38%;
     }
+    .logoBack{
+        bottom: -18vw;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -67,5 +70,8 @@
     }
     a{
         text-decoration: none;
+    }
+    .logoBack{
+        bottom: -23vw;
     }
 }

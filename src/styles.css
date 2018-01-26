@@ -6143,6 +6143,11 @@ app-content {
   background-size: cover;
   z-index: 10000; }
 
+.highlight {
+  background-image: url("assets/img/highlight.png");
+  opacity: 0.5;
+  z-index: 10001; }
+
 .copyright-info {
   font-size: 16px;
   position: absolute;
@@ -6271,7 +6276,10 @@ app-content {
     margin-bottom: 0; }
 
   .navigation {
-    bottom: 38%; } }
+    bottom: 38%; }
+
+  .logoBack {
+    bottom: -18vw; } }
 @media screen and (max-width: 1024px) {
   .footer-logo {
     top: 50%;
@@ -6301,4 +6309,7 @@ app-content {
     font-size: 32px; }
 
   a {
-    text-decoration: none; } }
+    text-decoration: none; }
+
+  .logoBack {
+    bottom: -23vw; } }
