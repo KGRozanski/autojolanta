@@ -6015,38 +6015,58 @@ app-content {
 .sections {
   overflow: hidden;
   padding: 0; }
+  .sections .sectionBackground {
+    position: absolute;
+    width: 100%;
+    background-color: #3f3f3f;
+    top: -3000px;
+    left: 0;
+    height: 3000px;
+    z-index: 1; }
   .sections .row:first-child {
     margin-top: 0;
     z-index: 1000; }
-    .sections .row:first-child .container-fluid .row {
-      background-color: #C15339; }
+    .sections .row:first-child .glowna {
+      background-image: url("assets/img/glowna.png");
+      height: 200%; }
     .sections .row:first-child .wrapper .squere {
+      background-color: #C15339; }
+    .sections .row:first-child .wrapper .sectionBackground {
       background-color: #C15339; }
   .sections .row:nth-child(2) {
     z-index: 900; }
-    .sections .row:nth-child(2) .row {
-      background-color: #E2A764; }
+    .sections .row:nth-child(2) .about {
+      background-image: url("assets/img/about.png");
+      height: 200%; }
     .sections .row:nth-child(2) .wrapper .squere {
+      background-color: #E2A764; }
+    .sections .row:nth-child(2) .wrapper .sectionBackground {
       background-color: #E2A764; }
   .sections .row:nth-child(3) {
     z-index: 800; }
-    .sections .row:nth-child(3) .row {
-      background-color: #4AA26E; }
+    .sections .row:nth-child(3) .services {
+      background-image: url("assets/img/services.png"); }
     .sections .row:nth-child(3) .wrapper .squere {
+      background-color: #4AA26E; }
+    .sections .row:nth-child(3) .wrapper .sectionBackground {
       background-color: #4AA26E; }
   .sections .row:nth-child(4) {
     z-index: 700; }
-    .sections .row:nth-child(4) .row {
-      background-color: #44788E; }
+    .sections .row:nth-child(4) .parts {
+      background-image: url("assets/img/parts.png"); }
     .sections .row:nth-child(4) .wrapper .squere {
+      background-color: #44788E; }
+    .sections .row:nth-child(4) .wrapper .sectionBackground {
       background-color: #44788E; }
   .sections .row:nth-child(5) {
     z-index: 600; }
-    .sections .row:nth-child(5) .row {
-      background-color: #515B9B; }
+    .sections .row:nth-child(5) .contact {
+      background-image: url("assets/img/contact.png"); }
     .sections .row:nth-child(5) .wrapper {
       height: 298px; }
       .sections .row:nth-child(5) .wrapper .squere {
+        background-color: #515B9B; }
+      .sections .row:nth-child(5) .wrapper .sectionBackground {
         background-color: #515B9B; }
 
 .navbar {
@@ -6135,18 +6155,12 @@ app-content {
   background-position: bottom;
   width: 100%;
   height: 150%;
-  opacity: 0.25;
-  background-image: url("assets/img/background template.png");
+  opacity: 0.15;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 10000; }
-
-.highlight {
-  background-image: url("assets/img/highlight.png");
-  opacity: 0.5;
-  z-index: 10001; }
+  z-index: 100; }
 
 .copyright-info {
   font-size: 16px;
@@ -6226,7 +6240,7 @@ app-content {
   width: 180px;
   height: 180px;
   border-radius: 100px;
-  background-color: #4AA26E;
+  background-color: #60d18b;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -6235,9 +6249,9 @@ app-content {
   outline: none !important; }
 
 .btn-jolanta:hover {
-  background-color: #30ca6b;
-  -webkit-box-shadow: inset 0 0 10px #0000007e;
-          box-shadow: inset 0 0 10px #0000007e; }
+  background-color: #0ecc57;
+  -webkit-box-shadow: inset 0 0 20px #000000b9;
+          box-shadow: inset 0 0 20px #000000b9; }
 
 .navigation {
   position: absolute;

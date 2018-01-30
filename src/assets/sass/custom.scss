@@ -161,62 +161,87 @@ app-content{
 .sections{
     overflow: hidden;
     padding: 0;
+    .sectionBackground{
+        position: absolute;
+        width: 100%;
+        background-color: #3f3f3f;
+        top: -3000px;
+        left: 0;
+        height: 3000px;
+        z-index: 1;
+
+    }
     .row:first-child{
+        .glowna{
+            background-image: url('assets/img/glowna.png');
+            height: 200%;
+        }
         margin-top: 0;
         z-index: 1000;
-        .container-fluid{
-            .row{
-                background-color: $logoColor;
-            }
-        }
         .wrapper{
             .squere{
+                background-color: $logoColor;
+            }
+            .sectionBackground{
                 background-color: $logoColor;
             }
             
         }
     }
     .row:nth-child(2){
-        z-index: 900;
-        .row{
-            background-color: $aboutColor;
+        .about{
+            background-image: url('assets/img/about.png');
+            height: 200%;
         }
+        z-index: 900;
         .wrapper{
             .squere{
+                background-color: $aboutColor;
+            }
+            .sectionBackground{
                 background-color: $aboutColor;
             }
         }
     }
     .row:nth-child(3){
         z-index: 800;
-        .row{
-            background-color: $servicesColor;
+        .services{
+            background-image: url("assets/img/services.png");
         }
         .wrapper{
             .squere{
+                background-color: $servicesColor;
+            }
+            .sectionBackground{
                 background-color: $servicesColor;
             }
         }
     }
     .row:nth-child(4){
         z-index: 700;
-        .row{
-            background-color: $partsColor;   
+        .parts{
+            background-image: url("assets/img/parts.png");
         }
         .wrapper{
             .squere{
+                background-color: $partsColor;
+            }
+            .sectionBackground{
                 background-color: $partsColor;
             }
         }
     }
     .row:nth-child(5){
         z-index: 600;
-        .row{
-            background-color: $contactColor;
+        .contact{
+            background-image: url("assets/img/contact.png");
         }
         .wrapper{
             height: 298px;
             .squere{
+                background-color: $contactColor;
+            }
+            .sectionBackground{
                 background-color: $contactColor;
             }
         }
@@ -312,17 +337,11 @@ app-content{
     background-position: bottom;
     width: 100%;;
     height: 150%;
-    opacity: 0.25;
-    background-image: url("assets/img/background template.png");
+    opacity: 0.15;
     transform: translateX(-50%);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 10000;
-}
-.highlight{
-    background-image: url("assets/img/highlight.png");
-    opacity: 0.5;
-    z-index: 10001;
+    z-index: 100;
 }
 .copyright-info{
     font-size: 16px;
@@ -405,7 +424,7 @@ app-content{
     width: 180px;
     height: 180px;
     border-radius: 100px;
-    background-color: $servicesColor;
+    background-color: rgb(96, 209, 139);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -413,8 +432,8 @@ app-content{
     outline: none !important;
 }
 .btn-jolanta:hover{
-    background-color: rgb(48, 202, 107);
-    box-shadow: inset 0 0 10px #0000007e;
+    background-color: rgb(14, 204, 87);
+    box-shadow: inset 0 0 20px #000000b9;
 }
 .navigation{
     position: absolute;
