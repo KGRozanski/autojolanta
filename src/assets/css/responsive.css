@@ -24,7 +24,10 @@
     margin-bottom: 0; }
 
   .navigation {
-    bottom: 38%; } }
+    bottom: 38%; }
+
+  .logoBack {
+    bottom: -18vw; } }
 @media screen and (max-width: 1024px) {
   .footer-logo {
     top: 50%;
@@ -53,4 +56,7 @@
     font-size: 32px; }
 
   a {
-    text-decoration: none; } }
+    text-decoration: none; }
+
+  .logoBack {
+    bottom: -23vw; } }
