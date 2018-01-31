@@ -6008,6 +6008,12 @@ p {
 table {
   font-size: 34px; }
 
+.services-img {
+  padding: 30px; }
+
+.services-p {
+  text-align: center; }
+
 app-content {
   margin-top: 50px;
   display: block; }
@@ -6019,9 +6025,9 @@ app-content {
     position: absolute;
     width: 100%;
     background-color: #3f3f3f;
-    top: -3000px;
+    top: -5000px;
     left: 0;
-    height: 3000px;
+    height: 5000px;
     z-index: 1; }
   .sections .row:first-child {
     margin-top: 0;
@@ -6046,6 +6052,8 @@ app-content {
     z-index: 800; }
     .sections .row:nth-child(3) .services {
       background-image: url("assets/img/services.png"); }
+    .sections .row:nth-child(3) .servicesImages p {
+      min-height: 96px; }
     .sections .row:nth-child(3) .wrapper .squere {
       background-color: #4AA26E; }
     .sections .row:nth-child(3) .wrapper .sectionBackground {
@@ -6061,7 +6069,10 @@ app-content {
   .sections .row:nth-child(5) {
     z-index: 600; }
     .sections .row:nth-child(5) .contact {
-      background-image: url("assets/img/contact.png"); }
+      background-image: url("assets/img/contact.png");
+      z-index: 1000; }
+    .sections .row:nth-child(5) .contactInfo {
+      z-index: 1000; }
     .sections .row:nth-child(5) .wrapper {
       height: 298px; }
       .sections .row:nth-child(5) .wrapper .squere {
@@ -6266,7 +6277,13 @@ app-content {
 
 @media screen and (min-width: 991px) {
   .clipping-path-ractangle {
-    display: none; } }
+    display: none; }
+
+  .map {
+    z-index: 1000; }
+
+  .navigation {
+    z-index: 1001; } }
 @media screen and (max-width: 991px) {
   .map {
     top: 200px; }
@@ -6281,7 +6298,7 @@ app-content {
     font-size: 20px; }
 
   p {
-    font-size: 18px; }
+    font-size: 24px; }
 
   .note {
     font-size: 16px; }
@@ -6293,7 +6310,10 @@ app-content {
     bottom: 38%; }
 
   .logoBack {
-    bottom: -18vw; } }
+    bottom: -18vw; }
+
+  .contact {
+    bottom: 45.5vh !important; } }
 @media screen and (max-width: 1024px) {
   .footer-logo {
     top: 50%;
@@ -6326,4 +6346,7 @@ app-content {
     text-decoration: none; }
 
   .logoBack {
-    bottom: -23vw; } }
+    bottom: -23vw; }
+
+  .contact {
+    bottom: 48.5vh !important; } }

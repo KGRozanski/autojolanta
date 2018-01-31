@@ -146,12 +146,17 @@ p{
     position: relative;
     top: 6vw;
 }
-
 .top-margin{
     padding-top: 300px;
 }
 table{
     font-size: 34px;
+}
+.services-img{
+    padding: 30px;
+}
+.services-p{
+    text-align: center;
 }
 //SECTIONS
 app-content{
@@ -165,9 +170,9 @@ app-content{
         position: absolute;
         width: 100%;
         background-color: #3f3f3f;
-        top: -3000px;
+        top: -5000px;
         left: 0;
-        height: 3000px;
+        height: 5000px;
         z-index: 1;
 
     }
@@ -208,6 +213,11 @@ app-content{
         .services{
             background-image: url("assets/img/services.png");
         }
+        .servicesImages{
+            p{
+                min-height: 96px;
+            }
+        }
         .wrapper{
             .squere{
                 background-color: $servicesColor;
@@ -235,6 +245,10 @@ app-content{
         z-index: 600;
         .contact{
             background-image: url("assets/img/contact.png");
+            z-index: 1000;
+        }
+        .contactInfo{
+            z-index: 1000;
         }
         .wrapper{
             height: 298px;
