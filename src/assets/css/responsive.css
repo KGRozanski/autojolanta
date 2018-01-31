@@ -1,6 +1,12 @@
 @media screen and (min-width: 991px) {
   .clipping-path-ractangle {
-    display: none; } }
+    display: none; }
+
+  .map {
+    z-index: 1000; }
+
+  .navigation {
+    z-index: 1001; } }
 @media screen and (max-width: 991px) {
   .map {
     top: 200px; }
@@ -15,7 +21,7 @@
     font-size: 20px; }
 
   p {
-    font-size: 18px; }
+    font-size: 24px; }
 
   .note {
     font-size: 16px; }
@@ -27,7 +33,10 @@
     bottom: 38%; }
 
   .logoBack {
-    bottom: -18vw; } }
+    bottom: -18vw; }
+
+  .contact {
+    bottom: 45.5vh !important; } }
 @media screen and (max-width: 1024px) {
   .footer-logo {
     top: 50%;
@@ -59,4 +68,7 @@
     text-decoration: none; }
 
   .logoBack {
-    bottom: -23vw; } }
+    bottom: -23vw; }
+
+  .contact {
+    bottom: 48.5vh !important; } }

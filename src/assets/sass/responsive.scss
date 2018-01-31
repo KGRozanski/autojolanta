@@ -2,6 +2,12 @@
     .clipping-path-ractangle{
         display: none;
     }
+    .map{
+        z-index: 1000;
+    }
+    .navigation{
+        z-index: 1001;
+    }
 }
 @media screen and (max-width: 991px) {
     .map{
@@ -17,7 +23,7 @@
         font-size: 20px;
     }
     p{
-        font-size: 18px;
+        font-size: 24px;
     }
     .note{
         font-size: 16px;
@@ -30,6 +36,9 @@
     }
     .logoBack{
         bottom: -18vw;
+    }
+    .contact{
+        bottom: 45.5vh !important;
     }
 }
 
@@ -73,5 +82,8 @@
     }
     .logoBack{
         bottom: -23vw;
+    }
+    .contact{
+        bottom: 48.5vh !important;
     }
 }
