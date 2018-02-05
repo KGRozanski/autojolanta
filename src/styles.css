@@ -5998,6 +5998,9 @@ p {
   left: 0;
   background-color: #424242; }
 
+.logo {
+  margin-top: 50px; }
+
 .logo-wrapper {
   position: relative;
   top: 6vw; }
@@ -6014,8 +6017,20 @@ table {
 .services-p {
   text-align: center; }
 
+.center-x {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.fluffy-icons {
+  line-height: 100px;
+  font-size: 64px; }
+
+nav {
+  opacity: 0.8; }
+
 app-content {
-  margin-top: 50px;
   display: block; }
 
 .sections {
@@ -6048,6 +6063,18 @@ app-content {
       background-color: #E2A764; }
     .sections .row:nth-child(2) .wrapper .sectionBackground {
       background-color: #E2A764; }
+    .sections .row:nth-child(2) p::-moz-selection {
+      background: #E2A764; }
+    .sections .row:nth-child(2) p::selection {
+      background: #E2A764; }
+    .sections .row:nth-child(2) p::-moz-selection {
+      background: #E2A764; }
+    .sections .row:nth-child(2) h1::-moz-selection {
+      background: #E2A764; }
+    .sections .row:nth-child(2) h1::selection {
+      background: #E2A764; }
+    .sections .row:nth-child(2) h1::-moz-selection {
+      background: #E2A764; }
   .sections .row:nth-child(3) {
     z-index: 800; }
     .sections .row:nth-child(3) .services {
@@ -6058,6 +6085,24 @@ app-content {
       background-color: #4AA26E; }
     .sections .row:nth-child(3) .wrapper .sectionBackground {
       background-color: #4AA26E; }
+    .sections .row:nth-child(3) p::-moz-selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) p::selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) p::-moz-selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) h1::-moz-selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) h1::selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) h1::-moz-selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) span::-moz-selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) span::selection {
+      background: #4AA26E; }
+    .sections .row:nth-child(3) span::-moz-selection {
+      background: #4AA26E; }
   .sections .row:nth-child(4) {
     z-index: 700; }
     .sections .row:nth-child(4) .parts {
@@ -6066,19 +6111,63 @@ app-content {
       background-color: #44788E; }
     .sections .row:nth-child(4) .wrapper .sectionBackground {
       background-color: #44788E; }
+    .sections .row:nth-child(4) p::-moz-selection {
+      background: #44788E; }
+    .sections .row:nth-child(4) p::selection {
+      background: #44788E; }
+    .sections .row:nth-child(4) p::-moz-selection {
+      background: #44788E; }
+    .sections .row:nth-child(4) h1::-moz-selection {
+      background: #44788E; }
+    .sections .row:nth-child(4) h1::selection {
+      background: #44788E; }
+    .sections .row:nth-child(4) h1::-moz-selection {
+      background: #44788E; }
   .sections .row:nth-child(5) {
     z-index: 600; }
     .sections .row:nth-child(5) .contact {
       background-image: url("assets/img/contact.png");
-      z-index: 1000; }
+      z-index: 1005;
+      height: 1500px;
+      bottom: -6vh !important; }
     .sections .row:nth-child(5) .contactInfo {
-      z-index: 1000; }
+      z-index: 1100; }
     .sections .row:nth-child(5) .wrapper {
       height: 298px; }
       .sections .row:nth-child(5) .wrapper .squere {
         background-color: #515B9B; }
       .sections .row:nth-child(5) .wrapper .sectionBackground {
         background-color: #515B9B; }
+    .sections .row:nth-child(5) p::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) p::selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) p::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h1::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h1::selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h1::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h2::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h2::selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) h2::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) a::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) a::selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) a::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) br::-moz-selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) br::selection {
+      background: #515B9B; }
+    .sections .row:nth-child(5) br::-moz-selection {
+      background: #515B9B; }
 
 .navbar {
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
@@ -6138,13 +6227,14 @@ app-content {
 
 .footer-wrapper {
   overflow: hidden;
-  margin-top: -300px; }
+  margin-top: -300px;
+  min-height: 300px; }
 
 .footer {
   position: relative;
   width: 100%;
   top: 16vw;
-  height: 35vh; }
+  height: 38vh; }
 
 .footer-logo {
   position: absolute;
@@ -6192,7 +6282,7 @@ app-content {
   left: 0;
   z-index: 1000;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: #424242; }
 
 .black::before {
@@ -6275,6 +6365,10 @@ app-content {
   left: 26%;
   top: 10%; }
 
+@media screen and (min-width: 2000px) {
+  .footer-wrapper {
+    margin-top: -400px;
+    min-height: 600px; } }
 @media screen and (min-width: 991px) {
   .clipping-path-ractangle {
     display: none; }
@@ -6283,8 +6377,16 @@ app-content {
     z-index: 1000; }
 
   .navigation {
-    z-index: 1001; } }
+    z-index: 1501; }
+
+  .contact {
+    position: absolute;
+    left: -50%;
+    top: 0; } }
 @media screen and (max-width: 991px) {
+  h1 {
+    text-align: center; }
+
   .map {
     top: 200px; }
 
@@ -6312,14 +6414,18 @@ app-content {
   .logoBack {
     bottom: -18vw; }
 
-  .contact {
-    bottom: 45.5vh !important; } }
+  h2 {
+    font-size: 50px; } }
 @media screen and (max-width: 1024px) {
   .footer-logo {
     top: 50%;
     -webkit-transform: translateY(-10%);
             transform: translateY(-10%); } }
 @media screen and (max-width: 768px) {
+  .fluffy-icons {
+    font-size: 45px;
+    line-height: 60px; }
+
   .footer {
     top: 22vw; }
 
@@ -6332,21 +6438,11 @@ app-content {
     top: -40vw;
     left: 10%; }
 
-  h1 {
-    text-align: center; }
-
   h2 {
-    font-size: 28px;
-    text-align: center; }
-
-  .tel {
-    font-size: 32px; }
+    font-size: 30px; }
 
   a {
     text-decoration: none; }
 
   .logoBack {
-    bottom: -23vw; }
-
-  .contact {
-    bottom: 48.5vh !important; } }
+    bottom: -23vw; } }

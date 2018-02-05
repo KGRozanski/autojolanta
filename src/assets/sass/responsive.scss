@@ -1,3 +1,9 @@
+@media screen and (min-width: 2000px) {
+    .footer-wrapper{
+        margin-top: -400px;
+        min-height: 600px;
+    }
+}
 @media screen and (min-width: 991px) {
     .clipping-path-ractangle{
         display: none;
@@ -6,10 +12,18 @@
         z-index: 1000;
     }
     .navigation{
-        z-index: 1001;
+        z-index: 1501;
+    }
+    .contact{
+        position: absolute;
+        left: -50%;
+        top: 0;
     }
 }
 @media screen and (max-width: 991px) {
+    h1{
+        text-align: center;
+    }
     .map{
         top: 200px;
     }
@@ -37,8 +51,8 @@
     .logoBack{
         bottom: -18vw;
     }
-    .contact{
-        bottom: 45.5vh !important;
+    h2{
+        font-size: 50px;
     }
 }
 
@@ -55,6 +69,10 @@
 // EXTRA SMALL
 
 @media screen and (max-width: 768px) {
+    .fluffy-icons{
+        font-size: 45px;
+        line-height: 60px;
+    }
     .footer{
         top: 22vw;
     }
@@ -67,23 +85,14 @@
         top: -40vw;
         left: 10%;
     }
-    h1{
-        text-align: center;
-    }
+
     h2{
-        font-size: 28px;
-        text-align: center;
-    }
-    .tel{
-        font-size: 32px;
+        font-size: 30px;
     }
     a{
         text-decoration: none;
     }
     .logoBack{
         bottom: -23vw;
-    }
-    .contact{
-        bottom: 48.5vh !important;
     }
 }

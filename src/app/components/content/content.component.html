@@ -127,7 +127,7 @@
 		<div class="container-fluid">
 				
 			<div class="row">
-				<div class="logoBack contact"></div>
+				
 				<div class="navigation">	
 					<form (ngSubmit)="onSubmit()">
 						<button class="btn btn-jolanta" type="submit" style="font-size: 40px;">
@@ -135,24 +135,57 @@
 						</button>
 					</form>
 				</div>
-				<div class="col-lg-3 col-lg-offset-1 col-md-6 col-xs-12 top-margin contactInfo">
+				<div class="col-lg-5 col-lg-offset-1 col-md-6 col-xs-12 top-margin contactInfo">
 					<h1>kontakt</h1>
-					<h2 class="tel">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						&nbsp;
-						<a href="tel:+48500390430" class="href">500 390 430</a>
-					</h2>
-					<h2><i class="fa fa-envelope" aria-hidden="true"></i>biuro@autojolanta.pl</h2>
-					<h2>
-						<i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
-						<a href="https://www.facebook.com/pg/autojolanta/" class="href">facebook.com/autojolanta</a>
-					</h2>
-					<h2><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;ul. Poznańska 305, Ołtarzew<br>05-850 Ożarów Mazowiecki</h2>
-					<h2><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Pon-Pt: 8:00 - 18:00<br>&nbsp;Sob: 10:00 - 17:00</h2>
+
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-1 col-md-offset-1">
+							<h2><i class="fa fa-phone center-x" aria-hidden="true"></i></h2>
+						</div>
+						<div class="col-xs-7 col-md-10">
+							<h2><a href="tel:+48500390430" class="href">500 390 430</a></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-1 col-md-offset-1">
+							<h2><i class="fa fa-map-marker center-x fluffy-icons" aria-hidden="true"></i></h2>
+						</div>
+						<div class="col-xs-7 col-md-10">
+							<h2>ul. Poznańska 305, Ołtarzew<br>05-850 Ożarów Mazowiecki</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-1 col-md-offset-1">
+							<h2><i class="fa fa-clock-o center-x fluffy-icons" aria-hidden="true"></i></h2>
+						</div>
+						<div class="col-xs-7 col-md-10">
+							<h2>Pon-Pt: 8:00 - 18:00<br>Sob: 10:00 - 17:00</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-1 col-md-offset-1">
+							<h2><i class="fa fa-envelope center-x" aria-hidden="true"></i></h2>
+						</div>
+						<div class="col-xs-7 col-md-10">
+							<h2>biuro@autojolanta.pl</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-offset-2 col-xs-1 col-md-offset-1">
+							<h2><i class="fa fa-facebook-official center-x" aria-hidden="true"></i></h2>
+						</div>
+						<div class="col-xs-7 col-md-10">
+							<h2><a href="https://www.facebook.com/pg/autojolanta/" class="href">facebook.com/autojolanta</a></h2>
+						</div>
+					</div>
+					
+					
 				</div>
-				<div class=" col-lg-offset-2 col-md-6 col-xs-12" style="padding: 0;">
+				<div class="  col-md-6 col-xs-12" style="padding: 0;">
 					<div class="map">
-						<div class="map-triangle"></div>
+						<div class="map-triangle">
+							<div class="logoBack contact"></div>
+						</div>
 						<app-map></app-map>
 					</div>
 				</div>
