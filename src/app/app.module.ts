@@ -4,9 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './components/content/content.component';
 import { MapComponent } from './components/map/map.component';
-
-import { HttpClientModule } from '@angular/common/http';
-
+import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from '@agm/core';
 
 import { FormsModule } from '@angular/forms';
@@ -28,7 +26,7 @@ import { AllegroComponent } from './components/allegro/allegro.component';
       apiKey: 'AIzaSyDCHUX5vXuJYzdHlwiVvYpUqc24uoE5B1o'
     }),
     FormsModule,
-    HttpClientModule
+    HttpModule
   ],
   providers: [
   ],
