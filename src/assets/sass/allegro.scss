@@ -1,0 +1,20 @@
+.allegroItem{
+    padding: 15px;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    border-radius: 5px;
+
+    h3{
+        text-align: center;
+        font-size: 40px;
+    }
+    span{
+        color: rgb(7, 81, 150);
+        display: block;
+        width: 100%;
+        font-size: 35px;
+        text-align: center;
+    }
+}
+.allegroItem:hover{
+    opacity: 0.9;
+}

@@ -32,7 +32,6 @@ export class AllegroComponent implements OnInit {
     this.getVerKey().subscribe(
       (response) => {
         const keyArray = response.json();
-        console.log(keyArray);
         var array = keyArray['sysCountryStatus']['item'][0]['verKey'];
         console.log(array);
       },
