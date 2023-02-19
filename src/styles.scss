@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+
+body{
+    background-color: rgb(73, 73, 73);
+}
+
+body, .p-component{
+    font-family: 'Inter', sans-serif !important;
+}
+
+h2{
+    font-size: 2em;
+    margin-bottom: .75em;
+}
+
+p{
+    font-size: 1.25em;
+    line-height: 1.25em;
+}

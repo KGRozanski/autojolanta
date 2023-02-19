@@ -1,0 +1,16 @@
+@use '../../../../styles/mixins';
+
+:host {
+    @include mixins.column;
+}
+
+.product-item-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        max-width: 175px;
+        filter: invert(1);
+    }
+}
