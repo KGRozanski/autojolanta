@@ -1,0 +1,92 @@
+
+.shadow{
+  position: relative;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25));
+}
+.chevron {
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 6vw), 50% 100%, 0 calc(100% - 6vw));
+    position: relative;
+    background-color: #c15339;
+    overflow: hidden;
+    margin-top: -6vw;
+    padding: calc(6vw + 100px) 0;
+
+    &::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 5000%;
+      height: 5000%;
+      background: url(../assets/header.gif) 0 0 repeat;
+      transform: translate(-50%, -50%) rotate(20deg);
+      filter: opacity(.1);
+      z-index: -1;
+    }
+
+  }
+  
+.about{
+  background-color: #e2a764;
+
+  &::after{    
+    background: url(../assets/about.png) 0 0 repeat;
+  }
+}
+
+.services{
+  background-color: #44788e;
+  // background-color: #4aa26e;
+
+  &::after{    
+    background: url(../assets/services.png) 0 0 repeat;
+  }
+}
+
+
+.contact{
+  background-color: #4aa26e;
+
+  &::after{    
+    background: url(../assets/directions.png) 0 0 repeat;
+  }
+}
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .chevron{
+    padding: calc(6vw + 150px) 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .chevron{
+    padding: calc(6vw + 60px) 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .chevron{
+    padding: calc(6vw + 60px) 100px;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .chevron{
+    padding: calc(6vw + 60px) 200px;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1600px) {
+  .chevron{
+    padding: calc(6vw + 60px) 400px;
+  }
+}

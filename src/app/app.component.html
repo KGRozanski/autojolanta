@@ -1,42 +1,22 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav nav-pills nav-justified">
-				<li>
-					<a href="#index" class="scroll"><i class="fa fa-car" aria-hidden="true"></i>&nbsp;główna</a>
-				</li>
-				<li>
-					<a href="#about" class="scroll"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;o firmie</a>
-				</li>
-				<li>
-					<a href="#services" class="scroll"><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;usługi</a>
-				</li>
-				<li>
-					<a href="#parts" class="scroll"><i class="fa fa-sield"></i>&nbsp;części</a>
-				</li>
-				<li>
-					<a href="#contact" class="scroll"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;kontakt</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-<app-content></app-content>
-<div class="footer-wrapper">
-		<div class="footer">
-				<span class="copyright-info">Copyright © Auto Jolanta 2018 - design &#38; codeing Kamil Różański</span>
-				<div class="whiteBorder"></div>
-				<div class="black"></div>
-			</div>
+<div class="shadow" style="z-index: 1100;" id="start">
+  <div class="chevron">
+    <app-header></app-header>
+  </div>
+</div>
+<div class="shadow" style="z-index: 1000;" id="about">
+  <div class="chevron about">
+    <app-about></app-about>
+  </div>
+</div>
+<div class="shadow" style="z-index: 900;" id="services">
+  <div class="chevron services">
+    <app-services></app-services>
+  </div>
+</div>
+<div class="shadow" style="z-index: 800;" id="contact">
+  <div class="chevron contact">
+    <app-directions></app-directions>
+  </div>
 </div>
 
-
-
-
+<app-footer style="position: absolute; z-index: 10000;"></app-footer>

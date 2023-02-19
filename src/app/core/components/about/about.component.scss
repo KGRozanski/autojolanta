@@ -1,0 +1,6 @@
+@use '../../../../styles/mixins';
+
+:host {
+    @include mixins.column;
+}
+
