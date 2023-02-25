@@ -12,11 +12,11 @@
         margin-bottom: 30px;
     }
 
-    h2:first-child{
+    h2:first-child {
         font-size: 2em;
     }
 
-    h3{
+    h3 {
         font-size: 1.5em;
         line-height: 1.25em;
     }
@@ -28,26 +28,26 @@
     }
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    min-height: 600px;
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-.contact-info{
-    i{
+.contact-info {
+    i {
         font-size: 2em;
     }
-    div{
+    div {
         display: flex;
         gap: 15px;
         margin-bottom: 15px;

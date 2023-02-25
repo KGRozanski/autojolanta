@@ -16,8 +16,8 @@
       top: 0;
       left: 0;
       content: '';
-      width: 5000%;
-      height: 5000%;
+      width: 400%;
+      height: 400%;
       background: url(../assets/header.gif) 0 0 repeat;
       transform: translate(-50%, -50%) rotate(20deg);
       filter: opacity(.1);
@@ -89,4 +89,17 @@
   .chevron{
     padding: calc(6vw + 60px) 400px;
   }
+}
+
+.menu-mobile{
+  display: none;
+  margin: -130px 0 0 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-mobile{
+      display: block;
+  }
+
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,10 +13,11 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
     declarations: [AppComponent, HeaderComponent, AboutComponent, ServicesComponent, DirectionsComponent, FooterComponent],
-    imports: [BrowserModule, AppRoutingModule, CarouselModule, ButtonModule, TabMenuModule ],
+    imports: [BrowserAnimationsModule, BrowserModule, AppRoutingModule, CarouselModule, ButtonModule, TabMenuModule, TieredMenuModule ],
     providers: [],
     bootstrap: [AppComponent],
 })
