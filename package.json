@@ -1,6 +1,7 @@
 {
   "name": "autojolanta",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Kamil Popiel",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

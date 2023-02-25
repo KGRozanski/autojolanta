@@ -2,5 +2,23 @@
 
 :host {
     @include mixins.column;
+    display: flow-root;
 }
 
+.focus{
+    float: right;
+    max-width: 480px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .focus{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .focus{
+        margin-bottom: 20px;
+    }
+}

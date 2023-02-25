@@ -1,6 +1,10 @@
 <div class="shadow" style="z-index: 1100;" id="start">
   <div class="chevron">
-    <app-header></app-header>
+    <app-header (items$)="handleItems($event)"></app-header>
+  </div>
+  <div class="menu-mobile">
+    <p-tieredMenu #menu [model]="items" [popup]="true" ></p-tieredMenu>
+    <button #btn type="button" pButton icon="pi pi-fw pi-list" label="Menu" (click)="menu.toggle($event)"></button>
   </div>
 </div>
 <div class="shadow" style="z-index: 1000;" id="about">

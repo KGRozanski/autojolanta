@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Menu } from './core/types/menu.type';
 
 
 @Component({
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    title = 'autojolanta';
+    title = 'AutoJolanta';
+    items: Menu = [];
 
-
+    handleItems(event: Menu) {
+        this.items = event;
+    }
 }
